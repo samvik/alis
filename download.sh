@@ -5,7 +5,8 @@ set -e
 # and customized Arch Linux system.
 # Copyright (C) 2020 picodotdev
 
-GITHUB_USER="picodotdev"
+GITHUB_USER="netbear"
+BRANCH=own
 
 while getopts "u:" arg; do
   case ${arg} in
@@ -29,15 +30,15 @@ rm -f alis-recovery.sh
 rm -f alis-recovery-asciinema.sh
 rm -f alis-recovery-reboot.sh
 
-curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/master/alis.conf
-curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/master/alis.sh
-curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/master/alis-asciinema.sh
-curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/master/alis-reboot.sh
+curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/$BRANCH/alis.conf
+curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/$BRANCH/alis.sh
+curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/$BRANCH/alis-asciinema.sh
+curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/$BRANCH/alis-reboot.sh
 
-curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/master/alis-recovery.conf
-curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/master/alis-recovery.sh
-curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/master/alis-recovery-asciinema.sh
-curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/master/alis-recovery-reboot.sh
+curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/$BRANCH/alis-recovery.conf
+curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/$BRANCH/alis-recovery.sh
+curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/$BRANCH/alis-recovery-asciinema.sh
+curl -O https://raw.githubusercontent.com/$GITHUB_USER/alis/$BRANCH/alis-recovery-reboot.sh
 
 chmod +x alis.sh
 chmod +x alis-asciinema.sh

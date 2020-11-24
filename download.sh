@@ -5,8 +5,8 @@ set -e
 # and customized Arch Linux system.
 # Copyright (C) 2020 picodotdev
 
-GITHUB_USER="netbear"
-BRANCH=own
+GITHUB_USER="samvik"
+BRANCH="own"
 
 while getopts "u:" arg; do
   case ${arg} in
